@@ -22,7 +22,7 @@
 # This hash maps the filenames to is md5 hash value 
 # Note that we only need to hash the files in the
 # size_files_hash, since we are only interested
-# in files with same lenght (take a look at
+# in files with same length (take a look at
 # sub process_checksums()). The current implementation
 # will detect if we need to compute the md5 checksum
 # for the current file by searching for its size
@@ -31,7 +31,7 @@
 # by iterating directly in every value of size_files_hash.
 # However, in practice, this seems not to be a bottleneck.
 #
-# Finally, as fdupes (http://premium.caribe.net/~adrian2/fdupes.html) do,
+# Finally, as fdupes (http://premium.caribe.net/~adrian2/fdupes.html) does,
 # we should do a bit-by-bit comparision of files with the same md5sum.
 # This is NOT implemented now.
 
